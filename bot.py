@@ -1,13 +1,14 @@
 from os import path
 from discord.ext import commands
 
-from hinata.handler import confighandler as _configHandler
-from hinata.handler import eventhandler as _eventHandler
-from hinata.handler import coghandler as _cogHandler
+import confighandler as _configHandler
+import eventhandler as _eventHandler
+import coghandler as _cogHandler
+
 
 class Hinata:
     def __init__(self):
-        self.config_path = path.join(path.dirname(path.abspath(__file__)), '../assets/config.json')
+        self.config_path = path.join(path.dirname(path.abspath(__file__)), 'assets/config.json')
         self.config = _configHandler.ConfigHandler(self.config_path).load_config()
 
         self.dev_environment = bool(self.config['dev_environment'])

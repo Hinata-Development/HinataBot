@@ -9,7 +9,7 @@ class CogHandler():
             if file.endswith(".py"):
                 cog_name = file[:-3]
                 try:
-                    self.hinata.bot.load_extension(f"hinata.cogs.{cog_name}")
+                    self.hinata.bot.load_extension(f"cogs.{cog_name}")
                     print(f"[>] Loaded Cog: {cog_name}")
                 except Exception as err:
                     print(f"[!] Error loading cog {cog_name}, {type(err).__name__} - {err}")
