@@ -29,11 +29,8 @@ class EventHandler:
 
             if isinstance(error, commands.NSFWChannelRequired):
                 embed = discord.Embed(title="Error! <a:HinataCry:710280345379143741>", colour=14522759)
-                embed.description = f"Unable to use **{self.hinata.command_prefix}{ctx.command}** in non **NSFW** channels!   \n\n Type: **{error}**"
+                embed.description = f"Unable to use **{self.hinata.prefix}{ctx.command}** in non **NSFW** channels!   \n\n Type: **{error}**"
                 await ctx.send(embed=embed)
 
-            embed = discord.Embed(title="Error! <a:HinataCry:710280345379143741>", colour=14522759)
-            embed.description = f"Error! Contact if this persists with the command! \n \nError Type: **{error}**"
-            await ctx.send(embed=embed)
 
         print("[>] Loaded Events.")
