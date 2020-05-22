@@ -1,0 +1,12 @@
+{
+  "dev_environment": true,
+  "discord": {
+    "dev": "NzEzMTg1NjY2MTM3MzI1NjM5.Xscb_g._s0ZRJe14iMVch4flKKzwnQ9ZZY",
+    "release": "NzA5MTE5MjUzMjc3ODM1MzM2.XrhRZA.ln4JZgShr98h_rZ52fZZ6oueMUI"
+  },
+  "prefixing": {
+    "dev": "hd?",
+    "rel": "h?"
+  },
+  "owner_id": 709119253277835336
+}
