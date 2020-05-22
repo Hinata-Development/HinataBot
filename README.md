@@ -1,6 +1,6 @@
 # HinataBot
 Hinata is a unique bot all the hentai, anime loving weebs.\
-Based in discord.py with a backend in node.js, Hinata is fast responding and useful for your everday needs.
+Based in discord.py with a backend in node.js, Hinata is fast responding and useful for your everyday needs.
 
 ## Setting Up
 Assuming you're an active developer (or) have somehow obtained the source code most likely by a repo leak, here's how to set it up, lol.
