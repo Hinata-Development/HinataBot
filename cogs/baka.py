@@ -2,6 +2,7 @@ from discord.ext import commands
 import discord
 import requests_async as requests
 
+
 class Baka(commands.Cog):
     def __init__(self, hinata):
         self.hinata = hinata
@@ -20,6 +21,7 @@ class Baka(commands.Cog):
             embed.description = f"{ctx.author.name} **called** {member.name} **a BAKA!** :("
             embed.set_footer(text=f"h?baka [@member]")
             await ctx.send(embed=embed)
+
 
 def setup(bot):
     bot.add_cog(Baka(bot))

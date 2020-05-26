@@ -1,6 +1,6 @@
 from discord.ext import commands
 import discord
-import requests
+import requests_async
 
 class Disgust(commands.Cog):
     def __init__(self, hinata):
@@ -13,9 +13,9 @@ class Disgust(commands.Cog):
             member = ctx.message.author
 
         avatar_url = member.avatar_url_as(format="png")
-        req = requests.get(f"{self.url}{avatar_url}")
+        req = await requests_async.get(f"{self.url}{avatar_url}")
 
-        embed = discord.Embed(title="Hinata - Disgust", colour=14522759)
+        embed = discord.Embed(title="Hinata · Disgust", colour=14522759)
         embed.set_image(url=req.json()['url'])
         embed.set_footer(text="h?disgust [@member]")
         await ctx.send(embed=embed)
